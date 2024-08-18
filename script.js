@@ -84,10 +84,7 @@ for (let i = 0; i < products.length; i++) {
     const product = products[i];
     const productContainer = productContainers[i];
     
-    // const productContainer = document.createElement("article");
-    // productContainer.className("card grid-container");
     const productDiv = document.createElement("div");
-    // productContainer.appendChild(productDiv);
 
     const productImg = document.createElement("img");
     productImg.src = product.image;
