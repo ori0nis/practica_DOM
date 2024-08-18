@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="script.js" defer></script>
+  <meta title="Taste the Rainbow Cakes"></meta>
+  <meta
+      description="This is the best cake store in the world"
+    />
+    <meta lang="en" translate="no" />
+    <meta author="Oihane" />
+    <meta
+      keywords="cake, dessert, sweets, birthday, happy birthday, party, anniversary, celebrate"
+    />
+    <link rel="icon" href="./assets/logos/favicon.png" />
+    <title>Taste the Rainbow Cakes</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/logos/logo.png" alt="Taste the Rainbow logo" title="Taste the Rainbow logo">
+    <label for="search">
+      <input id="search" type="search" name="search" placeholder="Search your item..." />
+    </label>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><img src="./assets/logos/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./assets/logos/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com" target="_blank"><img src="./assets/logos/tiktok-icon.png" alt="TikTok"></a>
+  </div>
+  </header>
+  <div class="page-title">
+  <h1>Taste the Rainbow Cakes</h1>
+</div>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#cupcakes">Cupcakes</a></li>
+        <li><a href="#macarons">Macarons</a></li>
+        <li><a href="#tower">Macaron Towers</a></li>
+      </ul>
+    </nav>
+  </aside>
+<!-- He intentado ser ambiciosa con este select y en principio le había dado links igual que al nav, pero no funcionaban y he preferido dejarlo como está-->
+  <label for="hiddenselect">
+    <select id="hiddenselect" placeholder="Select your item">
+      <option value="cakes">Cakes</option>
+      <option value="cupcakes">Cupcakes</option>
+      <option value="macarons">Macarons</option>
+      <option value="tower">Macaron Towers</option>
+    </select>
+    </label>
+  <main>
+    <!-- Las fotos de las cartas son de aquí: https://ohmycake.co.za/product-category/cakes/ he añadido lo de rel="noopener" pero parece que no funciona-->
+    <section class="cards">
+      <!-- <a href="https://ohmycake.co.za/product/lavish-rose-gold-cake/" rel="noopener" target="_blank"> -->
+      <article id="cakes" class="card grid-container">
+        <!-- <img src="./assets/products/cake-1.jpg">
+        <div class="grid-container">
+          <h3>Rose Cake</h3>
+            <p>From $20.99</p>
+            <button>Buy now</button>
+        </div> -->
+    </article>
+  <!-- </a> -->
+  <!-- <a href="https://ohmycake.co.za/product/daddy-cool-cake/" rel="noopener" target="_blank"> -->
+    <article class="card grid-container">
+      <!-- <img src="./assets/products/cake-2.jpg">
+      <div class="grid-container">
+        <h3>Daddy Cool Cake</h3>
+          <p>From $25.99</p>
+          <button>Buy now</button>
+      </div> -->
+  </article> 
+<!-- </a> -->
+<a href="https://ohmycake.co.za/product/cutesy-cartoon-cake/" rel="noopener" target="_blank">
+  <article class="card grid-container">
+    <img src="./assets/products/cake-3.jpg">
+    <div class="grid-container">
+      <h3>Cartoony Cake</h3>
+        <p>From $27.99</p>
+        <button>Buy now</button>
+    </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/caramel-pop-cupcake/" rel="noopener" target="_blank">
+<article id="cupcakes" class="card grid-container">
+  <img src="./assets/products/cupcake-1.jpg">
+  <div class="grid-container">
+    <h3>Caramel Cupcake</h3>
+      <p>$2.50</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/mothers-day-flourish-cupcake/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/cupcake-2.jpg">
+  <div class="grid-container">
+    <h3>Mother's Day Flourish</h3>
+      <p>$2.50</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/dads-espresso-cupcake/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/cupcake-3.jpg">
+  <div class="grid-container">
+    <h3>Espresso Cupcake</h3>
+      <p>$2.50</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/classic-rainbow-macarons/" rel="noopener" target="_blank">
+<article id="macarons" class="card grid-container">
+  <img src="./assets/products/macaron-1.jpg">
+  <div class="grid-container">
+    <h3>Rainbow Macarons</h3>
+      <p>From $1.70</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/best-ever-brownie-macaron/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/macaron-2.jpg">
+  <div class="grid-container">
+    <h3>Brownie Macarons</h3>
+      <p>From $1.70</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/love-sprinkle-macaron/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/macaron-3.jpg">
+  <div class="grid-container">
+    <h3>Love Bite Macarons</h3>
+      <p>From $1.70</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/classic-macaron-tower/" rel="noopener" target="_blank">
+<article id="tower" class="card grid-container">
+  <img src="./assets/products/tower-1.png">
+  <div class="grid-container">
+    <h3>Classic Macaron Tower</h3>
+      <p>$17.99</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/ivory-macaron-tower/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/tower-2.png">
+  <div class="grid-container">
+    <h3>Ivory Macaron Tower</h3>
+      <p>$18.99</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+<a href="https://ohmycake.co.za/product/pastel-macaron-tower-2/" rel="noopener" target="_blank">
+<article class="card grid-container">
+  <img src="./assets/products/tower-3.png">
+  <div class="grid-container">
+    <h3>Small Macaron Tower</h3>
+      <p>$13.99</p>
+      <button>Buy now</button>
+  </div>
+</article>
+</a>
+    </section>
+  </main>
+
+  <!-- Aquí iba la parte del código con el form y el footer, los he quitado para cumplir especificaciones-->
+
+</body>
+</html>
