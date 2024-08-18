@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --pastel-color: #fec7d7;
+  --main-background: #f9f8fc;
+  --aside-color: #d9d4e7;
+  --main-font: 'Lobster', sans-serif;
+  --p-font: 'Poppins', sans-serif;
+  --border-box: 1px solid black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(./assets/backgrounds/background-8.png);
+}
+
+header {
+  background-color: var(--pastel-color);
+  border: var(--border-box);
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  grid-area: header;
+}
+
+header > label > input {
+  height: 28px;
+  width: 250px;
+}
+
+header > .social-icons img {
+  width: 2.3em;
+}
+
+aside {
+  background-color: var(--aside-color);
+  border: var(--border-box);
+  border-radius: 10px;
+  padding: 1em;
+  width: 10%;
+  height: 2em;
+  margin-left: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+aside > nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+aside > nav > ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  font-family: var(--p-font);
+  font-size: 17px;
+}
+
+ul > li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+#hiddenselect {
+  background-color: var(--aside-color);
+  border: var(--border-box);
+  border-radius: 10px;
+  padding: 10px;
+  width: 10%;
+  height: 100px;
+  display: none;
+}
+
+.page-title {
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  text-align: center;
+  width: 47%;
+  background-color: var(--pastel-color);
+  border: var(--border-box);
+  border-radius: 25px;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-size: 75px;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cards {
+  background-color: var(--main-background);
+  border: var(--border-box);
+  border-radius: 10px;
+  margin-bottom: 150px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(autofit, minmax 200px, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 180px;
+  height: 450px;
+  transition: transform 0.5s;
+  font-family: var(--p-font);
+  font-size: 13px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-container > p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.grid-container > button {
+  background-color: var(--pastel-color);
+  height: 40px;
+  width: 100px;
+  border: var(--border-box);
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Comento el resto del CSS también:
+
+.delivery {
+  text-align: center;
+  padding: 2em;
+  background-color: var(--pastel-color);
+  border: var(--border-box);
+  height: 370px;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#delivery-form > fieldset {
+  border: none;
+  text-align: center;
+  font-family: var(--p-font);
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-title {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 30%;
+  background-color: var(--pastel-color);
+  font-family: var(--p-font);
+  font-size: 20px;
+  border: var(--border-box);
+}
+
+footer {
+  background-color: var(--aside-color);
+  font-family: var(--p-font);
+  font-size: 13px;
+  width: 45%;
+  height: 100px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+footer > i {
+  width: 100%;
+  text-align: center;
+}
+
+*/
+
+/* Media queries */
+/* Me he dejado medio cerebro con estas media queries, espero que estén bien xdd */
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 170%;
+    box-sizing: border-box;
+  }
+
+  .page-title {
+    width: 100%;
+    margin-left: 120px;
+    height: 11em;
+  }
+
+  .page-title > h1 {
+    font-size: 3rem;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #hiddenselect {
+    display: block;
+    width: 150px;
+    padding: 2em;
+    margin-left: 230px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: var(--p-font);
+    font-size: 18px;
+    border: var(--border-box);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* No entiendo por qué, no consigo que las cartas queden en el centro y me he negado a aplicar margin a lo bruto como en los elementos anteriores*/
+
+  .cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding: 3em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .delivery-title {
+    width: 250px;
+    margin-left: 170px;
+    font-size: 1rem;
+  }
+
+  .delivery {
+    height: 700px;
+    width: 400px;
+    margin-left: 60px;
+  }
+
+  fieldset {
+    font-size: 25px;
+  }
+
+  fieldset > label > input {
+    height: 20px;
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 110px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 460px) {
+  header {
+    width: 170%;
+    box-sizing: border-box;
+  }
+
+  .page-title {
+    width: 100%;
+    margin-left: 120px;
+    height: 180px;
+  }
+
+  .page-title > h1 {
+    font-size: 3rem;
+  }
+
+  aside {
+    display: none;
+  }
+
+  #hiddenselect {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin-left: 230px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: var(--p-font);
+    font-size: 18px;
+    border: var(--border-box);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* Lo mismo aquí */
+
+  .cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding: 3em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+
+  .delivery-title {
+    width: 250px;
+    margin-left: 190px;
+    font-size: 1rem;
+  }
+
+  .delivery {
+    height: 700px;
+    width: 400px;
+    margin-left: 80px;
+  }
+
+  fieldset {
+    font-size: 25px;
+  }
+
+  fieldset > label > input {
+    height: 20px;
+  }
+
+  footer {
+    width: 500px;
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 950px) {
+  header {
+    width: 200%;
+    box-sizing: border-box;
+  }
+
+  .page-title {
+    width: 100%;
+    margin-left: 220px;
+    height: 12em;
+    padding: 1em;
+  }
+
+  .page-title > h1 {
+    font-size: 3.5rem;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    width: 550px;
+    margin-left: 180px;
+    margin-top: 45px;
+    margin-bottom: 100px;
+  }
+
+  aside > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  aside > nav > ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 3px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    font-family: var(--p-font);
+    font-size: 17px;
+  }
+
+  #hiddenselect {
+    display: none;
+  }
+
+  main {
+    width: 800px;
+  }
+
+  .cards {
+    padding: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .delivery-title {
+    width: 250px;
+    margin-left: 300px;
+    font-size: 1rem;
+  }
+
+  .delivery {
+    height: 700px;
+    width: 400px;
+    margin-left: 190px;
+  }
+
+  fieldset {
+    font-size: 25px;
+  }
+
+  fieldset > label > input {
+    height: 20px;
+  }
+
+  footer {
+    width: 500px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  aside {
+    background-color: var(--aside-color);
+    border: var(--border-box);
+    border-radius: 10px;
+    padding: 10px;
+    width: 10%;
+    height: 250px;
+    margin-left: 100px;
+    grid-area: aside;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside > nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside > nav > ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    font-family: var(--p-font);
+    font-size: 17px;
+  }
+
+  #hiddenselect {
+    display: none;
+  }
+}
