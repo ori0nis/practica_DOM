@@ -27,8 +27,8 @@ header {
   padding: 1em;
   align-items: center;
   justify-items: center;
-  justify-content: space-evenly;
-  grid-area: header;
+  justify-content: space-around;
+  align-content: center;
 }
 
 header > label > input {
@@ -38,6 +38,20 @@ header > label > input {
 
 header > .social-icons img {
   width: 2.3em;
+}
+
+/* Clases dinámicas para el carrito */
+
+header > .cart {
+  max-width: 5%;
+  max-height: 10%;
+  object-fit: contain;
+}
+
+header > .cart img {
+  max-width: 50%;
+  max-height: 10%;
+  object-fit: contain;
 }
 
 aside {
@@ -156,78 +170,20 @@ main {
   transform: scale(1.1);
 }
 
-.card > img {
-  width: 100%;
-  object-fit: contain;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-}
+} 
 
-/* Comento el resto del CSS también:
+/* Clase dinámica para las imgs */
 
-.delivery {
-  text-align: center;
-  padding: 2em;
-  background-color: var(--pastel-color);
-  border: var(--border-box);
-  height: 370px;
-  width: 40%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#delivery-form > fieldset {
-  border: none;
-  text-align: center;
-  font-family: var(--p-font);
-  display: flex;
-  flex-direction: column;
-}
-
-.delivery-title {
-  display: block;
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
-  width: 30%;
-  background-color: var(--pastel-color);
-  font-family: var(--p-font);
-  font-size: 20px;
-  border: var(--border-box);
-}
-
-footer {
-  background-color: var(--aside-color);
-  font-family: var(--p-font);
-  font-size: 13px;
-  width: 45%;
-  height: 100px;
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-footer > ul {
-  display: flex;
+.img-dinamic {
   width: 100%;
-  justify-content: space-around;
+  object-fit: contain;
+  max-width: 100%;
 }
-
-footer > i {
-  width: 100%;
-  text-align: center;
-}
-
-*/
 
 /* Media queries */
-/* Me he dejado medio cerebro con estas media queries, espero que estén bien xdd */
 
 @media screen and (max-width: 375px) {
   header {
