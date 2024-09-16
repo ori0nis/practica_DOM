@@ -55,26 +55,23 @@ const products = [
         seller: 'Taste the Rainbow Cakes',
         image: './assets/products/macaron-3.jpg'
       },
-
-      // Le he dado mil vueltas, pero no sé por qué, estas imágenes no cargan:
-
       {
         productName: 'Classic Macaron Tower',
         price: 17.99,
         seller: 'Taste the Rainbow Cakes',
-        image: './assets/products/tower-1.jpg'
+        image: './assets/products/tower-1.png'
       },
       {
         productName: 'Ivory Macaron Tower',
         price: 18.99,
         seller: 'Taste the Rainbow Cakes',
-        image: './assets/products/tower-2.jpg'
+        image: './assets/products/tower-2.png'
       },
       {
         productName: 'Small Macaron Tower',
         price: 20.99,
         seller: 'Taste the Rainbow Cakes',
-        image: './assets/products/tower-3.jpg'
+        image: './assets/products/tower-3.png'
       },
 ]
 
@@ -171,11 +168,3 @@ const socialIconsDiv = document.querySelector(".social-icons");
 socialIconsDiv.insertAdjacentElement("afterend", cartDiv);
 
 
-
-
-
-
-
-
-
- 

@@ -43,14 +43,14 @@ header > .social-icons img {
 /* Clases dinámicas para el carrito */
 
 header > .cart {
-  max-width: 5%;
-  max-height: 10%;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 header > .cart img {
-  max-width: 50%;
-  max-height: 10%;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -132,13 +132,15 @@ main {
   width: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(autofit, minmax 200px, 1fr);
+  grid-template-rows: repeat(autofit, minmax 230px, 1fr);
+  gap: 1.5em;
   justify-items: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .card {
-  width: 180px;
+  width: 230px;
   height: 450px;
   transition: transform 0.5s;
   font-family: var(--p-font);
@@ -185,20 +187,26 @@ a {
 
 /* Media queries */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   header {
-    width: 170%;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart img {
+    width: 80px;
+    height: 80px;
   }
 
   .page-title {
-    width: 100%;
-    margin-left: 120px;
-    height: 11em;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: auto;
   }
 
-  .page-title > h1 {
-    font-size: 3rem;
+  .page-title h1 {
+    font-size: 2.5rem;
   }
 
   aside {
@@ -207,257 +215,105 @@ a {
 
   #hiddenselect {
     display: block;
-    width: 150px;
-    padding: 2em;
-    margin-left: 230px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: var(--p-font);
-    font-size: 18px;
-    border: var(--border-box);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  /* No entiendo por qué, no consigo que las cartas queden en el centro y me he negado a aplicar margin a lo bruto como en los elementos anteriores*/
-
-  .cards {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    padding: 3em;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
-  }
-
-  .delivery-title {
-    width: 250px;
-    margin-left: 170px;
-    font-size: 1rem;
-  }
-
-  .delivery {
-    height: 700px;
-    width: 400px;
-    margin-left: 60px;
-  }
-
-  fieldset {
-    font-size: 25px;
-  }
-
-  fieldset > label > input {
-    height: 20px;
-  }
-
-  footer {
-    width: 100%;
-    margin-left: 110px;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 460px) {
-  header {
-    width: 170%;
-    box-sizing: border-box;
-  }
-
-  .page-title {
-    width: 100%;
-    margin-left: 120px;
-    height: 180px;
-  }
-
-  .page-title > h1 {
-    font-size: 3rem;
-  }
-
-  aside {
-    display: none;
-  }
-
-  #hiddenselect {
-    display: block;
-    width: 150px;
-    padding: 10px;
-    margin-left: 230px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: var(--p-font);
-    font-size: 18px;
-    border: var(--border-box);
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
-  /* Lo mismo aquí */
-
-  .cards {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    padding: 3em;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
-  }
-
-  .delivery-title {
-    width: 250px;
-    margin-left: 190px;
-    font-size: 1rem;
-  }
-
-  .delivery {
-    height: 700px;
-    width: 400px;
-    margin-left: 80px;
-  }
-
-  fieldset {
-    font-size: 25px;
-  }
-
-  fieldset > label > input {
-    height: 20px;
-  }
-
-  footer {
-    width: 500px;
-    margin-left: 70px;
-  }
-}
-
-@media (min-width: 461px) and (max-width: 950px) {
-  header {
-    width: 200%;
-    box-sizing: border-box;
-  }
-
-  .page-title {
-    width: 100%;
-    margin-left: 220px;
-    height: 12em;
+    width: 80%;
+    margin: 2em auto;
     padding: 1em;
   }
 
-  .page-title > h1 {
-    font-size: 3.5rem;
-  }
-
-  aside {
-    display: flex;
-    flex-direction: row;
-    height: 130px;
-    width: 550px;
-    margin-left: 180px;
-    margin-top: 45px;
-    margin-bottom: 100px;
-  }
-
-  aside > nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-
-  aside > nav > ul {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    gap: 3px;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    font-family: var(--p-font);
-    font-size: 17px;
-  }
-
-  #hiddenselect {
-    display: none;
-  }
-
-  main {
-    width: 800px;
-  }
-
   .cards {
-    padding: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
-  }
-
-  .delivery-title {
-    width: 250px;
-    margin-left: 300px;
-    font-size: 1rem;
-  }
-
-  .delivery {
-    height: 700px;
-    width: 400px;
-    margin-left: 190px;
-  }
-
-  fieldset {
-    font-size: 25px;
-  }
-
-  fieldset > label > input {
-    height: 20px;
+    grid-template-columns: 1fr;
+    padding: 1em;
   }
 
   footer {
-    width: 500px;
-    margin-left: 70px;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 951px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+    padding: 1.5em;
+  }
+
+  .cart img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .page-title {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: auto;
+  }
+
+  .page-title h1 {
+    font-size: 3rem;
+  }
+
   aside {
-    background-color: var(--aside-color);
-    border: var(--border-box);
-    border-radius: 10px;
-    padding: 10px;
-    width: 10%;
-    height: 250px;
-    margin-left: 100px;
-    grid-area: aside;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: auto;
+    margin: 2em;
   }
 
-  aside > nav {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  aside > nav > ul {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: space-around;
-    font-family: var(--p-font);
-    font-size: 17px;
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
   }
 
   #hiddenselect {
     display: none;
+  }
+
+  footer {
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    justify-content: space-around;
+    padding: 2em;
+  }
+
+  .cart img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .page-title {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: auto;
+  }
+
+  .page-title h1 {
+    font-size: 4rem;
+  }
+
+  aside {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 2em;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3em;
+  }
+
+  #hiddenselect {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
   }
 }
